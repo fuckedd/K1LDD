@@ -1,6 +1,6 @@
 -- Function to handle player chat
 local function onChatted(message)
-    local prefix = ".win mini"
+    local prefix = ".win round"
     if message:sub(1, #prefix) == prefix then
         -- Execute the desired code when ".win" is typed in the chat
         game:GetService("ReplicatedStorage").WonDragMinigame:FireServer()
