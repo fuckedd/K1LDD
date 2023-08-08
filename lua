@@ -24,6 +24,7 @@ local function onChatted(message)
                         [1] = player.Character
                     }
                     game:GetService("ReplicatedStorage"):WaitForChild("Kill"):FireServer(unpack(args))
+                    game:GetService("ReplicatedStorage").WonDragMinigame:FireServer()
                 end
             end
             return -- Exit the function since we've killed everyone else
